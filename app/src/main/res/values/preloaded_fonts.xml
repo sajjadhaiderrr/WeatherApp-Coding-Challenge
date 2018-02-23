@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cairo_bold</item>
+        <item>@font/cardo</item>
+        <item>@font/dosis_semibold</item>
+        <item>@font/josefin_slab_semibold</item>
+        <item>@font/jura_light</item>
+        <item>@font/quicksand_light</item>
+        <item>@font/wire_one</item>
+    </array>
+</resources>

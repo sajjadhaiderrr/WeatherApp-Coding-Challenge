@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="apiKey">beb65f86b94b467d1d65ed3fdc51da69</string>
+
+    <string-array name="city_array">
+        <item>Calgary</item>
+        <item>Vancouver</item>
+        <item>Toronto</item>
+    </string-array>
+
+</resources>

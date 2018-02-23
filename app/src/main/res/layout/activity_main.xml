@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context="com.example.weatherapp.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/quicksand_light"
+            android:gravity="center"
+            android:text="CITY"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/cityTextView"
+            android:layout_marginTop="39dp"
+            android:fontFamily="@font/quicksand_light"
+            android:gravity="center"
+            android:text="date"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/weatherImageView"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_below="@id/dateTextView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/clear" />
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weatherImageView"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_light"
+            android:gravity="center"
+            android:text="Temperature"
+            android:textColor="@android:color/black"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/mainTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temperatureTextView"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/quicksand_light"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/windImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mainTextView"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="63dp"
+            android:layout_toLeftOf="@+id/weatherImageView"
+            android:layout_toStartOf="@+id/weatherImageView"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/windTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/windImageView"
+            android:layout_alignStart="@+id/windImageView"
+            android:layout_alignTop="@+id/windImageView"
+            android:layout_marginTop="49dp"
+            android:fontFamily="@font/quicksand_light"
+            android:text="WIND"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/windSpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/windImageView"
+            android:layout_alignRight="@+id/windImageView"
+            android:layout_below="@+id/windTextView"
+            android:fontFamily="@font/quicksand_light"
+            android:text="0.0 m/s"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/humidityImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/windImageView"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/humidityTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/windSpeedTextView"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/quicksand_light"
+            android:text="HUMIDITY"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidityTitleTextView"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/quicksand_light"
+            android:text="0%"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/highLoImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/humidityImageView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/weatherImageView"
+            android:layout_toRightOf="@+id/weatherImageView"
+            app:srcCompat="@drawable/temperature" />
+
+        <TextView
+            android:id="@+id/highLoTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/humidityTitleTextView"
+            android:layout_alignBottom="@+id/humidityTitleTextView"
+            android:layout_toEndOf="@+id/weatherImageView"
+            android:layout_toRightOf="@+id/weatherImageView"
+            android:fontFamily="@font/quicksand_light"
+            android:text="HIGH/LOW"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/highLoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/highLoTitleTextView"
+            android:layout_alignRight="@+id/highLoTitleTextView"
+            android:layout_below="@+id/highLoTitleTextView"
+            android:fontFamily="@font/quicksand_light"
+            android:text="20°C 20°C"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
